@@ -29,7 +29,7 @@ lines(dfConsumption$datetime, dfConsumption$Sub_metering_3, col = "blue")
 
 ## Add legend
 legend("topright", col = c("black","red","blue"), pch = "_", 
-       legend = colnames(dfConsumption)[7:9])
+       legend = colnames(dfConsumption)[7:9], cex=0.5)
 
 ## Copy plot to a PNG file 
 dev.copy(png, file = "plot3.png", width = 480, height = 480)
