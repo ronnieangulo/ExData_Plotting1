@@ -40,7 +40,7 @@ lines(dfConsumption$datetime, dfConsumption$Sub_metering_2, col = "red")
 lines(dfConsumption$datetime, dfConsumption$Sub_metering_3, col = "blue")
 
 ## Add legend
-legend("topright", col = c("black","red","blue"), pch = "_", legend = colnames(dfConsumption)[7:9], y.intersp = 1)
+legend("topright", col = c("black","red","blue"), pch = "_", legend = colnames(dfConsumption)[7:9], y.intersp = 1, cex=0.5)
 
 ## Create fourth (empty) plot on screen
 plot(dfConsumption$datetime, dfConsumption$Global_reactive_power, type = "n", ylab = "Global_reactive_power", xlab = "datetime")
